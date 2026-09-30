@@ -17,12 +17,8 @@ import {
 import { FULL_SIDEBAR } from "@/constants/sidebar";
 import { ChevronDown } from "lucide-react";
 
-type Props = {};
-
-export default function LeftSidebar({}: Props) {
-  const items = FULL_SIDEBAR.map((x, index) => x.items)[0];
-
-  console.log(items);
+export default function LeftSidebar() {
+  const items = FULL_SIDEBAR.flatMap((group) => group.items);
 
   return (
     <div className="h-[calc(100vh-30px)] w-[300px] bg-sidebar-accent">
@@ -49,7 +45,7 @@ export default function LeftSidebar({}: Props) {
             <SidebarGroupLabel>Workspace</SidebarGroupLabel>
             <SidebarMenu>
               {items.map((item) => (
-                <SidebarMenuItem>{item.name}</SidebarMenuItem>
+                <SidebarMenuItem key={item.name}>{item.name}</SidebarMenuItem>
               ))}
             </SidebarMenu>
           </SidebarGroup>

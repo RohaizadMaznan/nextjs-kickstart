@@ -3,9 +3,7 @@ import LeftSidebar from "@/modules/template/left-sidebar";
 import ShellContainer from "@/modules/template/shell-container";
 import React from "react";
 
-type Props = {};
-
-export default function page({}: Props) {
+export default function Page() {
   return (
     <main className="bg-blue-400 w-full">
       <div className="flex flex-col w-full lg:flex-row bg-red-400">
