@@ -2,6 +2,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+> **New machine?** Follow [docs/SETUP.md](docs/SETUP.md): it goes from installing Node.js to running the app.
+> **Class material:** [docs/LESSON-forms-and-queries.md](docs/LESSON-forms-and-queries.md) (React Hook Form, Zod, TanStack Query).
+
 First, run the development server:
 
 ```bash
